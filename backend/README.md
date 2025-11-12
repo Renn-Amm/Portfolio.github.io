@@ -98,3 +98,33 @@ backend/
 - `DB_PASSWORD` - Database password
 - `DB_NAME` - Database name
 - `NODE_ENV` - Environment (development/production)
+- `EMAIL_USER` - Email address for sending contact form messages
+- `EMAIL_PASS` - Email password or app-specific password
+- `RECEIVE_EMAIL` - Email address to receive contact form messages
+
+## Deployment
+
+The backend needs to be deployed separately from the frontend (GitHub Pages). Here are recommended hosting options:
+
+### Recommended Platforms
+1. **Heroku** - Easy deployment, free tier available
+2. **Railway** - Modern platform with great DX
+3. **Render** - Free tier with automatic deployments
+4. **Vercel** - Serverless functions (requires adaptation)
+5. **Netlify** - Serverless functions (requires adaptation)
+
+### Deployment Steps (General)
+1. Choose a hosting platform
+2. Create a new project/app
+3. Connect your GitHub repository
+4. Set environment variables in the platform dashboard
+5. Deploy the backend directory
+6. Note the deployed backend URL
+7. Update frontend API URLs to point to deployed backend
+
+### Important Notes
+- Ensure all environment variables are configured in production
+- Set up production database (MySQL)
+- Configure CORS to allow requests from GitHub Pages domain
+- Use SSL/HTTPS for production
+- Set NODE_ENV to 'production'

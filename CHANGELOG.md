@@ -2,6 +2,38 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.12.0] - 2025-11-12
+
+### Added
+- GitHub Pages deployment configuration
+- GitHub Actions workflow for automatic deployment
+- GITHUB_PAGES_DEPLOYMENT.md with complete deployment guide
+- CONTACT_FORM_SOLUTIONS.md with contact form alternatives
+- BACKEND_ALTERNATIVES.md explaining backend limitations and solutions
+- ContactSection.NO_BACKEND.tsx using FormSubmit (no backend needed)
+- Deploy script in package.json
+- .nojekyll file to prevent Jekyll processing
+- TODO.md for tracking tasks
+
+### Changed
+- Updated vite.config.ts with base path for GitHub Pages
+- Updated README.md with deployment and contact form solutions
+- Updated backend/README.md with deployment options
+- Updated all documentation files with GitHub Pages information
+
+### Deployment
+- Project now ready for GitHub Pages hosting
+- Automatic deployment on push to main branch
+- Frontend can be hosted on GitHub Pages
+- Backend requires separate hosting service OR use FormSubmit
+- Contact form has two solutions: FormSubmit (recommended) or deploy backend
+
+### Important Notes
+- Projects and Skills data are hardcoded in frontend (no backend needed)
+- Only contact form requires backend or alternative solution
+- FormSubmit provides free, no-backend contact form solution
+- Backend can be deployed to Render, Railway, or Heroku if full control needed
+
 ## [1.11.0] - 2025-11-12
 
 ### Added

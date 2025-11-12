@@ -180,12 +180,54 @@ The contact form sends messages via email using Nodemailer. To receive messages:
 
 See `SETUP_AND_RUN_GUIDE.md` for detailed setup instructions.
 
+## Deployment
+
+### GitHub Pages
+
+This project is configured for automatic deployment to GitHub Pages. See `GITHUB_PAGES_DEPLOYMENT.md` for complete deployment instructions.
+
+Quick steps:
+1. **Choose contact form solution** (see CONTACT_FORM_SOLUTIONS.md):
+   - Option A: Use FormSubmit (no backend needed, recommended)
+   - Option B: Deploy backend to Render/Railway
+2. Push your code to GitHub
+3. Enable GitHub Pages in repository settings (Source: GitHub Actions)
+4. Every push to `main` branch will automatically deploy
+
+Your site will be available at: `https://<username>.github.io/<repository-name>`
+
+### Contact Form Options
+
+Since GitHub Pages cannot run the Node.js backend, choose one:
+
+1. **FormSubmit (Recommended)** - Free service, no backend needed
+   - See `CONTACT_FORM_SOLUTIONS.md` for setup
+   - Use `ContactSection.NO_BACKEND.tsx` component
+   - Works immediately after deployment
+
+2. **Deploy Backend Separately** - Keep full control
+   - Deploy to Render, Railway, or Heroku
+   - See `backend/README.md` for deployment steps
+   - Update API URL in ContactSection.tsx
+
+### What Works on GitHub Pages?
+
+- **Frontend** - All pages, navigation, UI
+- **Projects Section** - Works (data is in frontend)
+- **Skills Section** - Works (data is in frontend)
+- **Contact Form** - Needs solution (choose FormSubmit or deploy backend)
+
 ## Documentation
 
+- **CONTACT_FORM_SOLUTIONS.md** - Contact form options for GitHub Pages (START HERE)
+- **GITHUB_PAGES_DEPLOYMENT.md** - Complete GitHub Pages deployment guide
+- **BACKEND_ALTERNATIVES.md** - All backend alternatives and workarounds
+- SETUP_AND_RUN_GUIDE.md - Detailed setup and running instructions
+- QUICK_START.md - Quick reference guide
 - CHANGELOG.md - Version history and changes
 - IMPROVEMENTS.md - Future improvements and enhancements
-- TODO.md - Current tasks and pending work
 - FINAL_FIXES.md - Final fixes and optimizations
+- TODO.md - Current tasks and pending work
 
 ## License
 

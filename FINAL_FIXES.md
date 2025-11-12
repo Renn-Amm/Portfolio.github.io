@@ -110,16 +110,35 @@ This document tracks final fixes and optimizations needed before deployment.
 
 ## Pre-Deployment Checklist
 
-- [ ] Run production build
-- [ ] Test production build locally
+### GitHub Pages (Frontend)
+- [x] Configure vite.config.ts with base path
+- [x] Create GitHub Actions workflow
+- [x] Add .nojekyll file
+- [x] Add deploy script to package.json
+- [x] Create deployment documentation
+- [ ] Update base path in vite.config.ts to match repository name
+- [ ] Run production build locally
+- [ ] Test production build locally with npm run preview
+- [ ] Enable GitHub Pages in repository settings
+- [ ] Push to GitHub and verify deployment
+- [ ] Test deployed site functionality
+- [ ] Verify all assets load correctly
+
+### Backend Deployment
+- [ ] Choose hosting service (Heroku, Vercel, Railway, Render)
 - [ ] Configure production environment variables
-- [ ] Set up hosting for frontend
 - [ ] Set up hosting for backend
-- [ ] Configure domain name
-- [ ] Set up SSL certificate
+- [ ] Update frontend API URLs to point to deployed backend
+- [ ] Test backend API endpoints in production
+- [ ] Set up database for production
+- [ ] Configure CORS for production domain
+
+### Optional
+- [ ] Configure custom domain name
+- [ ] Set up SSL certificate (automatic with GitHub Pages)
 - [ ] Configure CDN if needed
 - [ ] Set up monitoring and logging
-- [ ] Create deployment documentation
+- [ ] Add deployment status badge to README
 
 ## Post-Deployment Tasks
 
