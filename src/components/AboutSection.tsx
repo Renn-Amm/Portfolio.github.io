@@ -22,17 +22,18 @@ const AboutSection = () => {
         </div>
 
         <div className="max-w-6xl mx-auto space-y-10">
-          <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
+          <div className="flex flex-col md:flex-row gap-6 items-stretch">
             {/* Profile Image */}
-            <div className="flex justify-center md:justify-start animate-fade-in flex-shrink-0 w-full md:w-auto">
-              <div className="relative max-w-[300px] sm:max-w-[350px] md:max-w-[400px] rounded-2xl overflow-hidden shadow-glow">
+            <div className="flex justify-center md:justify-start animate-fade-in flex-shrink-0 md:h-full">
+              <div className="relative w-full max-w-[400px] md:h-full rounded-2xl overflow-hidden shadow-glow">
                 <img
                   src={profileImage}
                   alt="Profile"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
             </div>
+
 
             {/* Experience + Education + Story */}
             <div className="flex flex-col gap-4 flex-1 mt-6 md:mt-0">
