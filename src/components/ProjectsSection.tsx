@@ -38,8 +38,8 @@ const ProjectsSection = () => {
       image: progressPathImg,
       icon: BarChart3,
       tech: ['TailwindCSS', 'React', 'Node.js'],
-      liveLink: 'https://github.com/Renn-Amm/Project-Edge',
-      githubLink: 'https://github.com/Renn-Amm/Project-Edge',
+      liveLink: 'https://github.com/Renn-Amm/Progress-Tracker',
+      githubLink: 'https://github.com/Renn-Amm/Progress-Tracker',
       color: 'from-green-500 to-emerald-500'
     },
     {
